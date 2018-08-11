@@ -1,0 +1,15 @@
+db.hello.insertOne({name:"bhoot",age:20})
+db.hello.insertMany({name:"bla",age:20},{value:10,address:{city:"noida",state:"up"}})
+db.collection.find({field:{$gt:7,$lt:9}}).limit(2)
+db.bios.find({field:{$in:[5,7]}}).count()
+db.bios.find({},{name:1,contribs:1}).sort({age:-1,posts:1})
+db.inventory.find({$or:[{quantity:{$lt:20}},{price:10}]})
+db.hello.updateOne({name:"Central Perk Cafe"},{$set:{violations:3}})
+db.bye.updateMany({name:"hey"},{$unset:{violations:""}})
+db.hello.deleteOne({name:"rachel"})
+db.bye.deleteMany({name:"joey"})
+db.hello.drop()
+
+
+SQL
+
