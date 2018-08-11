@@ -10,6 +10,3 @@ db.hello.deleteOne({name:"rachel"})
 db.bye.deleteMany({name:"joey"})
 db.hello.drop()
 
-
-SQL
-
